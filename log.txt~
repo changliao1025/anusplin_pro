@@ -1,0 +1,78 @@
+anusplin.cpp: In member function ‘int anusplin::prepare_anusplin_splina_and_lapgrd_cmd(std::string, std::string, std::string, std::string, std::string, std::string, int, int, int, int, int, int, int, double, std::array<double, 4ul>, std::array<double, 2ul>)’:
+anusplin.cpp:42:60: error: ‘DOUBLE’ was not declared in this scope
+  double upper_x_lapgrd = lower_x_lapgrd + DOUBLE(resolution) * ncol;
+                                                            ^
+anusplin.cpp: In member function ‘int anusplin::run_splina(std::string, std::string, int, int, int, int, double)’:
+anusplin.cpp:208:2: error: ‘LPWSTR’ was not declared in this scope
+  LPWSTR sw;
+  ^
+anusplin.cpp:210:2: error: ‘DWORD’ was not declared in this scope
+  DWORD flags = CREATE_NEW_CONSOLE;
+  ^
+anusplin.cpp:250:19: error: ‘Sleep’ was not declared in this scope
+    Sleep(wait_time); ///<depreciated
+                   ^
+anusplin.cpp:257:4: error: ‘STARTUPINFO’ was not declared in this scope
+    STARTUPINFO si;
+    ^
+anusplin.cpp:258:4: error: ‘PROCESS_INFORMATION’ was not declared in this scope
+    PROCESS_INFORMATION pi;
+    ^
+anusplin.cpp:260:16: error: ‘si’ was not declared in this scope
+    ZeroMemory(&si, sizeof(si));
+                ^
+anusplin.cpp:260:30: error: ‘ZeroMemory’ was not declared in this scope
+    ZeroMemory(&si, sizeof(si));
+                              ^
+anusplin.cpp:265:4: error: ‘sw’ was not declared in this scope
+    sw = (LPWSTR)(stemp.c_str());
+    ^
+anusplin.cpp:272:5: error: ‘FALSE’ was not declared in this scope
+     FALSE,          // Set handle inheritance to FALSE
+     ^
+anusplin.cpp:273:5: error: ‘flags’ was not declared in this scope
+     flags,              // No creation flags
+     ^
+anusplin.cpp:277:8: error: ‘CreateProcess’ was not declared in this scope
+     &pi)           // Pointer to PROCESS_INFORMATION structure
+        ^
+anusplin.cpp:280:57: error: ‘GetLastError’ was not declared in this scope
+     printf("CreateProcess failed (%d).\n", GetLastError());
+                                                         ^
+anusplin.cpp: In member function ‘int anusplin::run_lapgrd(std::string, std::string, int, int, int, int, double)’:
+anusplin.cpp:316:2: error: ‘LPWSTR’ was not declared in this scope
+  LPWSTR sw;
+  ^
+anusplin.cpp:318:2: error: ‘DWORD’ was not declared in this scope
+  DWORD flags = CREATE_NEW_CONSOLE;
+  ^
+anusplin.cpp:358:19: error: ‘Sleep’ was not declared in this scope
+    Sleep(wait_time);
+                   ^
+anusplin.cpp:364:4: error: ‘STARTUPINFO’ was not declared in this scope
+    STARTUPINFO si;
+    ^
+anusplin.cpp:365:4: error: ‘PROCESS_INFORMATION’ was not declared in this scope
+    PROCESS_INFORMATION pi;
+    ^
+anusplin.cpp:366:16: error: ‘si’ was not declared in this scope
+    ZeroMemory(&si, sizeof(si));
+                ^
+anusplin.cpp:366:30: error: ‘ZeroMemory’ was not declared in this scope
+    ZeroMemory(&si, sizeof(si));
+                              ^
+anusplin.cpp:371:4: error: ‘sw’ was not declared in this scope
+    sw = (LPWSTR)(stemp.c_str());
+    ^
+anusplin.cpp:378:5: error: ‘FALSE’ was not declared in this scope
+     FALSE,          // Set handle inheritance to FALSE
+     ^
+anusplin.cpp:379:5: error: ‘flags’ was not declared in this scope
+     flags,              // No creation flags
+     ^
+anusplin.cpp:383:8: error: ‘CreateProcess’ was not declared in this scope
+     &pi)           // Pointer to PROCESS_INFORMATION structure
+        ^
+anusplin.cpp:386:57: error: ‘GetLastError’ was not declared in this scope
+     printf("CreateProcess failed (%d).\n", GetLastError());
+                                                         ^

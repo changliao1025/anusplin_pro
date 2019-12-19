@@ -1,0 +1,26 @@
+#the make file for the global libary==========================================================                                                                                                                        
+#comiple flag                                                                                                                                                                                                         
+CC = g++
+#CFLAGS = -std=c++0x -g -O0 -c -Wall
+CFLAGS = -std=c++0x -c -Wall
+#target program                                                                                                                                                                                                      
+#sort by a to z==========================================================                                                                                                                                            
+
+all: anusplin_openmp
+
+anusplin.o: anusplin.cpp
+	$(CC) $(CFLAGS) anusplin.cpp
+
+main.o: main.cpp
+	$(CC) $(CFLAGS) main.cpp
+
+system.o: system.cpp
+	$(CC) $(CFLAGS) system.cpp
+
+#finally==========================================
+
+anusplin_openmp: anusplin.o system.o main.o
+	$(CC) anusplin.o system.o main.o -o anusplin_openmp
+
+clean:
+	rm -rf *.o anusplin

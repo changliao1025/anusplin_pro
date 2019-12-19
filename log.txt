@@ -1,0 +1,84 @@
+g++    -c -o anusplin.o anusplin.cpp
+In file included from /apps/rhel6/gcc/5.2.0/include/c++/5.2.0/array:35:0,
+                 from anusplin.h:2,
+                 from anusplin.cpp:1:
+/apps/rhel6/gcc/5.2.0/include/c++/5.2.0/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+In file included from anusplin.cpp:1:0:
+anusplin.h:48:8: error: ‘std::array’ has not been declared
+   std::array<double, 4> boundary_splina,
+        ^
+anusplin.h:48:13: error: expected ‘,’ or ‘...’ before ‘<’ token
+   std::array<double, 4> boundary_splina,
+             ^
+anusplin.cpp:26:7: error: ‘std::array’ has not been declared
+  std::array<double, 4> boundary_splina,
+       ^
+anusplin.cpp:26:12: error: expected ‘,’ or ‘...’ before ‘<’ token
+  std::array<double, 4> boundary_splina,
+            ^
+anusplin.cpp: In member function ‘int anusplin::prepare_anusplin_splina_and_lapgrd_cmd(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, int, int, int, int, int, int, double, int)’:
+anusplin.cpp:35:27: error: ‘boundary_splina’ was not declared in this scope
+   double lower_x_splina = boundary_splina[0];
+                           ^
+anusplin.cpp:41:27: error: ‘boundary_lapgrd’ was not declared in this scope
+   double lower_x_lapgrd = boundary_lapgrd[0];
+                           ^
+anusplin.cpp: In member function ‘int anusplin::run_splina(std::__cxx11::string, std::__cxx11::string, int, int, int, int, double)’:
+anusplin.cpp:256:39: error: ‘usleep’ was not declared in this scope
+           usleep( 9.999999 * 1000000.0); ///<that is 10 seconds waiting for the next scan
+                                       ^
+anusplin.cpp:260:25: error: ‘fork’ was not declared in this scope
+           if( (pid=fork()) == -1)
+                         ^
+anusplin.cpp:263:21: error: ‘exit’ was not declared in this scope
+               exit(1);
+                     ^
+anusplin.cpp:268:28: error: ‘rv’ was not declared in this scope
+               waitpid(pid,&rv,0);
+                            ^
+anusplin.cpp:268:32: error: ‘waitpid’ was not declared in this scope
+               waitpid(pid,&rv,0);
+                                ^
+anusplin.cpp:278:43: error: ‘sDay_in’ was not declared in this scope
+               std::string sFilename_ini = sDay_in + "\\" + "splina.ini";
+                                           ^
+anusplin.cpp:280:38: error: ‘sFilename_splina’ was not declared in this scope
+               std::string sCommand = sFilename_splina + " > " + sFilename_ini + " > " + sFilename_log;
+                                      ^
+anusplin.cpp: In member function ‘int anusplin::run_lapgrd(std::__cxx11::string, std::__cxx11::string, int, int, int, int, double)’:
+anusplin.cpp:376:3: error: ‘LPWSTR’ was not declared in this scope
+   LPWSTR sw;
+   ^
+anusplin.cpp:378:3: error: ‘DWORD’ was not declared in this scope
+   DWORD flags = CREATE_NEW_CONSOLE;
+   ^
+anusplin.cpp:418:39: error: ‘usleep’ was not declared in this scope
+           usleep( 9.999999 * 1000000.0); ///<that is 10 seconds waiting for the next scan
+                                       ^
+anusplin.cpp:422:16: error: ‘pid’ was not declared in this scope
+           if( (pid=fork()) == -1)
+                ^
+anusplin.cpp:422:25: error: ‘fork’ was not declared in this scope
+           if( (pid=fork()) == -1)
+                         ^
+anusplin.cpp:425:21: error: ‘exit’ was not declared in this scope
+               exit(1);
+                     ^
+anusplin.cpp:427:14: error: ‘pid’ was not declared in this scope
+           if(pid)
+              ^
+anusplin.cpp:430:28: error: ‘rv’ was not declared in this scope
+               waitpid(pid,&rv,0);
+                            ^
+anusplin.cpp:430:32: error: ‘waitpid’ was not declared in this scope
+               waitpid(pid,&rv,0);
+                                ^
+anusplin.cpp:441:43: error: ‘sDay_in’ was not declared in this scope
+               std::string sFilename_ini = sDay_in + "\\" + "lapgrd.ini";
+                                           ^
+anusplin.cpp:443:38: error: ‘sFilename_splina’ was not declared in this scope
+               std::string sCommand = sFilename_splina + " > " + sFilename_ini + " > " + sFilename_log;
+                                      ^
+make: *** [anusplin.o] Error 1
