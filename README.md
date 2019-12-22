@@ -10,7 +10,7 @@ In order to generate time series of gridded climate data (temperature, precipita
 
 Applications of this tool have been used to generate climate data for three of my scientific publications.
 
-Please cite the following citation if you plan to use this tool.
+Please considering the following citations if you plan to use this tool.
 
 Liao, C., & Zhuang, Q. (2017). Quantifying the role of snowmelt in stream discharge in an Alaskan watershed: An analysis using a spatially distributed surface hydrology model.Journal of Geophysical Research: Earth Surface, 122, 2183– 2195. https://doi.org/10.1002/2017JF004214
 
