@@ -20,4 +20,4 @@ Chang Liao, Qianlai Zhuang (2017). Quantifying the Role of Permafrost Distributi
 
 Liao, C., Zhuang, Q., Leung, L. R., & Guo, L. (2019). Quantifying dissolved organic carbon dynamics using a three‐dimensional terrestrial ecosystem model at high spatial‐temporal resolutions. Journal of Advances in Modeling Earth Systems, 11. https://doi.org/10.1029/2019MS001792
 
-
+![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3930590.svg?raw=true)
